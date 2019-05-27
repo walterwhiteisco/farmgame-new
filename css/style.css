@@ -1,0 +1,14 @@
+.gametitle
+{
+	font-size: 50px;
+	color: #000000;
+	letter-spacing: 3px;
+}
+.dead
+{
+	background-color: #cc1919;
+}
+.alive
+{
+	background-color: #286128;
+}
