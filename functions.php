@@ -104,7 +104,7 @@ class Project
     public function getAllRounds()
     {
         $player_id = $_COOKIE['player'];
-        $sql = "select * from rounds where player_id='".$player_id."'";
+        $sql = "select * from rounds where player_id='".$player_id."' order by round_no asc";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();
